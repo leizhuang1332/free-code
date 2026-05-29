@@ -1,0 +1,90 @@
+python_mvp/tests/test_file_tools.py
+  s_22ef8c97bfd2f2::t_07228384813777 1-113
+python_mvp/app/input_processor.py
+  s_22ef8c97bfd2f2::t_ca7a9458366823 1-29
+python_mvp/app/engine.py
+  s_22ef8c97bfd2f2::t_896ae08cfdd95f 1-60
+python_mvp/tests/test_model_client.py
+  s_22ef8c97bfd2f2::t_1c2b3c18bc3738 1-148
+python_mvp/app/__init__.py
+  s_22ef8c97bfd2f2::t_f22140cf4c5600 1
+python_mvp/tests/test_builtin_tools.py
+  s_22ef8c97bfd2f2::t_c165d136820d3e 2-7
+  s_22ef8c97bfd2f2::t_67f251dac08628 1,8-13
+python_mvp/app/repl.py
+  s_22ef8c97bfd2f2::t_caa2f704027617 30-34
+  s_22ef8c97bfd2f2::t_053b92483a9606 8
+  s_22ef8c97bfd2f2::t_b5532a9aa88370 1-7,9-29,35-50,52-58
+python_mvp/app/tools/path_guard.py
+  s_22ef8c97bfd2f2::t_f4c882a5bae381 1-22
+python_mvp/tests/test_permissions.py
+  s_22ef8c97bfd2f2::t_7cafc8c5db3b19 1-24
+python_mvp/app/permissions.py
+  s_22ef8c97bfd2f2::t_dfaf6422c0ea1b 1-29
+python_mvp/app/tools/__init__.py
+  s_22ef8c97bfd2f2::t_34f5e653000bca 6,13-18
+  s_22ef8c97bfd2f2::t_4945a0af16d298 1-5,7-12,19
+python_mvp/app/tool_runner.py
+  s_22ef8c97bfd2f2::t_8f5e62441dcec2 32-38
+  s_22ef8c97bfd2f2::t_101fbbe2f84e37 1-5,7-10,17-18,20-31,39-53
+  s_22ef8c97bfd2f2::t_ca5b5978b9463a 6,11-16,19
+python_mvp/app/tools/read_file.py
+  s_22ef8c97bfd2f2::t_0efd8f164c6c63 5,13
+  s_22ef8c97bfd2f2::t_2712df30ac2f0c 1-4,6-12,14-49
+python_mvp/app/tools/write_file.py
+  s_22ef8c97bfd2f2::t_8cce7d98b197d5 1-49
+python_mvp/app/model_client.py
+  s_22ef8c97bfd2f2::t_b615d33789f9b6 1-2,6,12-23,106-121
+  s_22ef8c97bfd2f2::t_105f60567a1402 3-5,9,24-105,122-153
+  s_22ef8c97bfd2f2::t_5f5d459492b266 7-8,10-11
+python_mvp/tests/test_input_processor.py
+  s_22ef8c97bfd2f2::t_eb14e38bcfba2f 1-27
+python_mvp/tests/test_tool_runner.py
+  s_22ef8c97bfd2f2::t_37a9e42dc1f2fd 1-4,6,12,32,39,41-44,46-62,96-111
+  s_22ef8c97bfd2f2::t_7ba426bc173bb0 5,7-11,13-26
+  s_22ef8c97bfd2f2::t_c0cd6245394b84 27-31,33-38,40,45,63-95
+python_mvp/pyproject.toml
+  s_22ef8c97bfd2f2::t_c91d0e4302f8f0 8
+  s_22ef8c97bfd2f2::t_ba427e1421a2e3 1-4,10-16
+  s_22ef8c97bfd2f2::t_10943683b69477 5-7,9
+python_mvp/app/tools/list_dir.py
+  s_22ef8c97bfd2f2::t_f0627e1781b905 5,13
+  s_22ef8c97bfd2f2::t_ae2341efc9c3f5 1-4,6-12,14-45
+python_mvp/app/tool_registry.py
+  s_22ef8c97bfd2f2::t_cf59c2391cc7d9 1-6,8,10-23,25-46
+  s_22ef8c97bfd2f2::t_44b8e9acd2344c 7,9,24
+python_mvp/app/messages.py
+  s_22ef8c97bfd2f2::t_fe7dd4621b831b 1-65
+python_mvp/tests/test_write_file_tool.py
+  s_22ef8c97bfd2f2::t_d3e6a488a0c26f 1-39
+python_mvp/tests/test_transcript.py
+  s_22ef8c97bfd2f2::t_df9d45841d90b4 1-18
+python_mvp/README.md
+  s_22ef8c97bfd2f2::t_af19b281afc295 1-112
+python_mvp/tests/test_query_loop.py
+  s_22ef8c97bfd2f2::t_f9ad08ae98544b 2,9,78,80,82
+  s_22ef8c97bfd2f2::t_7b72a8227fb441 5,14
+  s_22ef8c97bfd2f2::t_fd28b7cd63b2ed 1,3-4,6-8,10-13,15-77,79,81,83-85
+python_mvp/tests/test_engine.py
+  s_22ef8c97bfd2f2::t_d951ee623a0868 1-49
+python_mvp/app/query_loop.py
+  s_22ef8c97bfd2f2::t_11f700814c38b1 1-43
+python_mvp/app/transcript.py
+  s_22ef8c97bfd2f2::t_ad5428f5110d94 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b8387f09bdb05c9b5053f9b4f90b1eb25d3c1c02",
+  "prompts": {},
+  "sessions": {
+    "s_22ef8c97bfd2f2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9bc3f3da-308a-4e6a-bc53-6bb677ad802d",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "leizhuang <lorcan.lei@jtexpress.com>"
+    }
+  }
+}
