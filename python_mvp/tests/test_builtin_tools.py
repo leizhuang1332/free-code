@@ -7,7 +7,12 @@ def test_create_read_only_registry_registers_file_tools():
     assert [schema["name"] for schema in registry.schemas()] == ["list_dir", "read_file"]
 
 
-def test_create_all_tools_registry_includes_write_file():
+def test_create_all_tools_registry_includes_all_tools():
     registry = create_all_tools_registry()
 
-    assert [schema["name"] for schema in registry.schemas()] == ["list_dir", "read_file", "write_file"]
+    assert [schema["name"] for schema in registry.schemas()] == [
+        "list_dir",
+        "read_file",
+        "write_file",
+        "bash",
+    ]

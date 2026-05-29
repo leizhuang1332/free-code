@@ -12,7 +12,7 @@ def query_loop(
     system_prompt: str,
     model_client: ModelClient,
     tool_runner: ToolRunner,
-    max_turns: int = 8,
+    max_turns: int = 50,
 ) -> Iterator[QueryEvent]:
     for _turn in range(max_turns):
         try:
