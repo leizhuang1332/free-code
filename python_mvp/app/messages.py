@@ -24,18 +24,21 @@ class Message:
     tool_name: str | None = None
     tool_uses: list[ToolUse] = field(default_factory=list)
     is_error: bool = False
+    reasoning_content: str | None = None
 
 
 @dataclass
 class AssistantTurn:
     text: str
     tool_uses: list[ToolUse] = field(default_factory=list)
+    reasoning_content: str | None = None
 
     def to_message(self) -> Message:
         return Message(
             role="assistant",
             content=self.text,
             tool_uses=list(self.tool_uses),
+            reasoning_content=self.reasoning_content,
         )
 
 

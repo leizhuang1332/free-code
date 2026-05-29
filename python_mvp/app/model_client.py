@@ -30,6 +30,8 @@ def messages_to_chat_messages(messages: list[Message]) -> list[dict[str, Any]]:
     for message in messages:
         if message.role in {"user", "assistant"}:
             item: dict[str, Any] = {"role": message.role, "content": message.content}
+            if message.role == "assistant" and message.reasoning_content:
+                item["reasoning_content"] = message.reasoning_content
             if message.tool_uses:
                 item["tool_calls"] = [
                     {
@@ -83,6 +85,7 @@ def _get_value(obj: Any, name: str, default: Any = None) -> Any:
 
 def chat_message_to_assistant_turn(message: Any) -> AssistantTurn:
     text = _get_value(message, "content") or ""
+    reasoning_content = _get_value(message, "reasoning_content", None)
     tool_uses: list[ToolUse] = []
 
     for call in _get_value(message, "tool_calls", []) or []:
@@ -100,7 +103,7 @@ def chat_message_to_assistant_turn(message: Any) -> AssistantTurn:
             )
         )
 
-    return AssistantTurn(text=text, tool_uses=tool_uses)
+    return AssistantTurn(text=text, tool_uses=tool_uses, reasoning_content=reasoning_content)
 
 
 class FakeModelClient:
@@ -149,5 +152,4 @@ class DeepSeekOpenAIClient:
             messages=chat_messages,
             tools=tool_schemas_to_chat_tools(tools),
         )
-        print(response)
         return chat_message_to_assistant_turn(response.choices[0].message)
