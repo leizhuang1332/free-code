@@ -2,6 +2,7 @@
 
 from app.tool_registry import ToolRegistry
 from app.tools.bash import BashTool
+from app.tools.edit_file import EditFileTool
 from app.tools.grep import GrepTool
 from app.tools.list_dir import ListDirTool
 from app.tools.read_file import ReadFileTool
@@ -18,6 +19,7 @@ def create_read_only_registry() -> ToolRegistry:
 
 def create_all_tools_registry() -> ToolRegistry:
     registry = create_read_only_registry()
+    registry.register(EditFileTool())
     registry.register(WriteFileTool())
     registry.register(BashTool())
     return registry

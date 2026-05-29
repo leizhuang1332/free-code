@@ -18,6 +18,7 @@ def test_create_all_tools_registry_includes_all_tools():
         "grep",
         "list_dir",
         "read_file",
+        "edit_file",
         "write_file",
         "bash",
     ]
