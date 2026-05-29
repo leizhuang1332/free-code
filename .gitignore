@@ -4,7 +4,7 @@ cli
 cli-dev
 openclaw/
 .env
-/.omc
-.pytest_cache/
-/__pycache__/
-.mvp-session.jsonl
+.omc/
+**/.pytest_cache/
+**/.mvp-session.jsonl
+**/__pycache__/
