@@ -8,3 +8,4 @@ openclaw/
 **/.pytest_cache/
 **/.mvp-session.jsonl
 **/__pycache__/
+.mvp-session.jsonl
